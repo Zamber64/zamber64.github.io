@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="HW2.css" />
+	<meta charset = "UTF-8">
+    <title>Games Done Slow</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Games Done Slow</h1>
+        </header>
+        <table>
+            <thead>
+                <tr id="title">
+                    <th colspan="3">Next Event's Schedule</th>
+                </tr>
+                <tr>
+                    <th>Start Time</th> <th>Game</th> <th>Estimated Completion Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="day">
+                    <td colspan=3>Day 1</td>
+                </tr>
+                <tr>
+                    <td>8am-9am</td> <td colspan="2">Opening Ceremonies</td>
+                </tr>
+                <tr>
+                    <td>2pm-8pm</td> <td>Legend of Zelda: Twilight Princess</td> <td>5 hours, 55 minutes</td>
+                </tr>
+                <tr>
+                    <td>8pm-12am</td> <td>Luigi's Mansion</td> <td>3 hours, 50 minutes</td>
+                </tr>
+                <tr class="day">
+                    <td colspan=3>Day 2</td>
+                </tr>
+                <tr>
+                    <td>12am-6am</td> <td>Sonic Unleshed</td> <td>5 hours, 45 minutes</td>
+                </tr>
+                <tr>
+                    <td>6am-12pm</td> <td>Dark Souls</td> <td> 5 hours, 55 minutes</td>
+                </tr>
+                <tr>
+                    <td>3pm-7pm</td> <td>Super Monkey Ball 2 </td> <td>3 hours, 50 minutes</td>
+                </tr>
+                <tr>
+                    <td>7pm-11pm</td> <td>Glover</td> <td> 3 hours, 55 minutes</td>
+                </tr>
+                <tr class="day">
+                    <td colspan=3>Day 3</td>
+                </tr>
+                <tr>
+                    <td>12am-11:30pm</td> <td>Persona 5 Any% Marathon</td> <td>11 hours, 25 minutes</td>
+                </tr>
+                <tr>
+                    <td>11:30pm-12am</td> <td colspan="2">Closing Ceremonies</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id=images>
+            <img src=gds2.jpg height=200 width=250 id="imgOne" title="The end of another great slow-running event!" alt="Event attendees cheering at the end of the last GDS.">
+            <img src=eric.jpg height=200 width=250 id="imgTwo" title="One of our runners showing you how he gets those impressive times!" alt="Shifty Eric doing a slow-run of Super Mario 64.">
+            <img src=gds1.jpg height=200 width=250 id="imgThree" title="A look at our event's main hall!" alt="A photo of last GDS's main hall.">
+        </div>
+        <p>
+		Beating video games incredibly slowly has been an informal pastime for as long as beating video games insanely quickly an informal pastime. 
+		Online communities started springing up in the mid-'90s around "slow-running" certain games, notably first-person shooters Doom and Quake, but computer 
+		storage and bandwidth limitations constrained the subculture's growth. However, as Moore's Law continued to hold through the early oughts, and people no 
+		longer had to leave their computers on overnight to download a 10-minute MPEG video, "slow-running" as it would be known started to attract a larger following. 
+		At the beginning of the 2010s, two complementary developments brought video game slow-running into the mainstream: the maturation of YouTube and the advent of Twitch. 
+		Runners could live-stream runs on Twitch, then upload the footage to YouTube and wait for those sweet, sweet recommendation algorithms to kick in whenever one of its billion 
+		users searches a phrase like "how to beat super mario world." Runners had spent decades building a community; now they had an audience.
+		</p>
+        <p>   
+        Games Done Slow is a series of charity video game marathons. These events feature high-level gameplay by slow-runners raising money for charity. 
+		In these events slow-runners take turns demonstrating their prowess at beating various video games in the slowest possible time, done in front of an 
+		audience as well as a livestream through Twitch.tv. Sometimes these runs may be executed in an unusual or specific way, such as fully completing every level, 
+		completing a game blindfolded, or featuring multiple runners racing against one another to complete a game last.Video games run in Games Done Slow events include both 
+		retro and modern titles. The runs typically feature commentary from the runner(s) or experienced commentators, as well as donation messages read by an announcer.
+        </p>
+        <p>
+        Most of the popular runs feature video game glitches and discussion between the runner and the commentators, most frequently describing techniques or using observational
+		humor and banter. Humor and banter is especially used for non-interactive or repetitive sequences that don't require the runner to use much or any skill. Donations from viewers
+		may feature humorous comments that contain inside jokes among the slow-running community, as well as more personal acknowledgements concerning the charity donated to. To date, 
+		Games Done Slow has raised over 19.3 million dollars for charity. We also average over 2000 people in attendance at our events, including staff, volunteers, runners, and attendees 
+		just looking to have fun and support the event!
+        </p>
+        <form>
+            <fieldset id="slowRun">
+                <p class="form">
+				What slow run are you most looking forward to at the next GDS?
+				</p>
+                <label for="mario64">Super Mario 64</label>
+                <input type="radio" id="mario64" value="mario64" name="slowRun">                    
+                <label for="monkeyBall2">Super Monkey Ball 2</label>
+                <input type="radio" id="monkeyBall2" value="monkeyBall2" name="slowRun">                    
+                <label for="glover">Glover</label>
+                <input type="radio" id="glover" value="glover" name="slowRun">
+                <label for="darkSouls">Dark Souls</label>
+                <input type="radio" id="darkSouls" value="darkSouls" name="slowRun">
+                <label for="undertaleG">Undertale (Genocide Run)</label>
+                <input type="radio" id="undertaleG" value="undertaleG" name="slowRun">                    
+                <label for="p5">Persona 5</label>
+                <input type="radio" id="p5" value="p5" name="slowRun">
+                <label for="otherGame">Some other game!</label>
+                <input type="radio" id="otherGame" value="otherGame" name="slowRun">
+            </fieldset>
+            <fieldset id="comments">
+                <p class="form">
+				What do you think of GDS? Tell us here!
+				</p>
+                <textarea name="comments" rows=8>Tell us what you think of GDS!</textarea>
+            </fieldset>
+            <fieldset id="buttons">
+                <input type="submit" id="sumbitButton" value="Submit" name="buttons">
+                <input type="reset" id="resetButton" value="Reset" name="buttons">
+            </fieldset>
+        </form>
+    </article>
+</body>
+</html>
